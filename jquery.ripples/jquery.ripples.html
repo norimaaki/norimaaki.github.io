@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+ 
+<!-- disable iPhone inital scale -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ 
+<title>jquery.ripples</title>
+ 
+<!-- Keyword,Description -->
+<meta name="keywords" content="">
+<meta name="description" content="">
+ 
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery.ripples-min.js"></script>
+<script>
+$(document).ready(function() {
+$('#demo').ripples({ //波紋をつける要素を指定
+resolution: 300, //波紋が広がる速さ
+dropRadius: 20, //波紋の大きさ
+perturbance: 0.01 //波紋の揺れの量
+});
+});
+</script>
+ 
+<style>
+body{
+margin: 0;
+padding: 0;
+}
+#demo{
+background: url("black.jpg") center center/cover no-repeat;
+width: 100%;
+height: 100vh;
+}
+</style>
+ 
+</head>
+ 
+<body>
+ 
+<div id="demo"></div>
+ 
+</body>
+</html>
