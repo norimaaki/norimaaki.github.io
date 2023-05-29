@@ -114,5 +114,17 @@
         message.innerText = post.message;
 
         listItem.appendChild(timestamp);
-        listItem.appendChild(name
+        listItem.appendChild(name);
+        listItem.appendChild(message);
 
+        postList.appendChild(listItem);
+      });
+    }
+
+    // 投稿リストをローカルストレージに保存する関数
+    function savePosts() {
+      localStorage.setItem("posts", JSON.stringify(posts));
+    }
+  </script>
+</body>
+</html>
