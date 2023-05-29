@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Proxy Server</title>
+  <title>HTMLプロキシサイト</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function loadExternalContent() {
+      var url = document.getElementById("url-input").value;
+      $.get(url, function(data) {
+        document.getElementById("content").innerHTML = data;
+      });
+    }
+  </script>
 </head>
 <body>
-    <h1>Proxy Server</h1>
-    <div>
-        <form id="proxyForm">
-            <label for="url">URL:</label>
-            <input type="text" id="url" name="url" placeholder="Enter URL">
-            <button type="submit">Fetch</button>
-        </form>
-    </div>
-    <div id="response"></div>
-
-    <script>
-        document.getElementById('proxyForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            var url = document.getElementById('url').value;
-
-            fetch('https://cors-anywhere.herokuapp.com/' + url)
-                .then(function(response) {
-                    return response.text();
-                })
-                .then(function(data) {
-                    document.getElementById('response').innerText = data;
-                })
-                .catch(function(error) {
-                    console.log('Error:', error);
-                });
-        });
-    </script>
+  <input type="text" id="url-input" placeholder="URLを入力してください">
+  <button onclick="loadExternalContent()">コンテンツを読み込む</button>
+  <div id="content"></div>
 </body>
 </html>
