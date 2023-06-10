@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            HOME
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-h1 {
-    margin: 0;
-    font-size: 60px;
-    font-family: 'EB Garamond', serif;
-    font-weight: normal;
-    color: #52ab8c;
-    white-space: nowrap;
-    overflow: hidden;
-    /*#sとは秒数のこと*/
-    animation: h1-anim 2.5s;
-}
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* レスポンシブデザインのスタイル */
+        h1 {
+            margin: 0;
+            font-size: 48px;
+            font-family: 'EB Garamond', serif;
+            font-weight: normal;
+            color: #52ab8c;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: h1-anim 2.5s;
+        }
+        
+        @keyframes h1-anim {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        div {
+            width: 100%;
+            border-style: outset;
+            background-color: #cfcfcf;
+        }
+
+        footer {
+            height: 100px;
+            background-color: #b5b5b5;
+        }
+
+        html {
+            background-color: #fff;
+        }
+
+        body {
+            background-color: #fff;
+            padding: 30px;
+            margin: 20px auto;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
+            border-radius: 3px;
+            position: relative;
+            max-width: 1200px;
+        }
+
+        /* レスポンシブデザインのスタイル */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 72px;
+            }
+
+            iframe {
+                height: 450px;
+            }
+        }
+    </style>
+    <script type="text/javascript">
     
+    </script>
+</head>
+<body>
+    <h1>Here is home page</h1>
+    <h3>WELCOME</h3>
+    <iframe src="jquery.ripples/jquery.ripples.html"></iframe>
 
-@keyframes h1-anim {
- 0%{
-     width: 0%;
-   }
-100%{
-     width: 100%;
-   }
-}
+    <!-- カラー選択 -->
+    <input type="color"><input type="color"><input type="color"><br>
+    <input type="color"><input type="color"><input type="color"><br>
+    <input type="color"><input type="color"><input type="color"><br>
+    <input type="color"><input type="color"><input type="color"><br>
+    <input type="color"><input type="color"><input type="color"><br>
 
-div {
-      width: 100px;
-      border-style: outset;
-      background-color: #cfcfcf;
-}
+    <img src="Fiery-Dragn.svg" width="100%" height="auto">
+    <img src="Fiery-Dragn.svg" width="100%" height="auto">
+    <img src="Fiery-Dragn.svg" width="100%" height="auto"><br>
+    <div>これらはドラゴンです</div>
 
-footer {
-         height: 100px;
-         background-color: #b5b5b5;
-}
- 
-html {
-    background-color: #fff;
-}
- 
-body {
-    background-color: #fff;
-    padding: 30px 30px 30px;
-    max-width: 1200px;
-    margin: 20px auto;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
-    border-radius: 3px;
-    position: relative;
-}
-        </style>
-        <script type="text/javascript">
-            
-        </script>
-    </head>
-    <body>
-        <h1>
-            Here is home page
-        </h1>
-        <h3>
-            WELCOME
-        </h3>
-        <iframe src="jquery.ripples/jquery.ripples.html"></iframe>
+    <iframe src="https://keijiban.norimaaki.repl.co/"></iframe>
+    <a href="https://norunkeijiban.apage.jp/#id297299">第二サーバー</a>
+    <iframe src="http://xd105772.php.xdomain.jp/"></iframe>
 
-<!-----カラー選択----->
-        <input type="color"><input type="color"><input type="color"><br>
-        <input type="color"><input type="color"><input type="color"><br>
-        <input type="color"><input type="color"><input type="color"><br>
-        <input type="color"><input type="color"><input type="color"><br>
-        <input type="color"><input type="color"><input type="color"><br>
-        
-<!-----カラー選択----->
-        <img src="Fiery-Dragn.svg" style="max-width: 100%;" alt="Fiery Dragn">
-        <img src="Fiery-Dragn.svg" style="max-width: 100%;" alt="Fiery Dragn">
-        <img src="Fiery-Dragn.svg" style="max-width: 100%;" alt="Fiery Dragn"><br>
-        <div>
-            これらはドラゴンです
-        </div>
-        
-        <iframe src="https://keijiban.norimaaki.repl.co/"></iframe>
-        <a href="https://norunkeijiban.apage.jp/#id297299">第二サーバー</a><br>
-        <a href="https://norimaaki.github.io/game/">test</a>
-        
-        <footer>
-            <h6>
-                ©norimaaki
-            </h6>
-        </footer>
-    </body>
+    <footer>
+        <h6>©norimaaki</h6>
+    </footer>
+</body>
 </html>
